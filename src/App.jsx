@@ -19,7 +19,10 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/addtransaction/:f" element={<AddTransaction />} />
+          <Route
+            path="/addtransaction/:accountId"
+            element={<AddTransaction />}
+          />
           <Route path="/dashboard" element={<AccountDashboard />} />
           <Route
             path="/account-details/:accountId"
